@@ -12,7 +12,7 @@ namespace ServerConnections.Models
         }
 
         public long Id { get; set; }
-        public string Name { get; set; }
+        public string CourseName { get; set; } = null!;
 
         public virtual ICollection<TblFaculty> TblFaculties { get; set; }
         public virtual ICollection<TblStudent> TblStudents { get; set; }
